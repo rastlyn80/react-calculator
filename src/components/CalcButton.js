@@ -1,10 +1,29 @@
 import React from "react";
 import { connect } from "react-redux";
-import { addDigit } from "../actions";
+import { addDigit, addDecimal, cancel } from "../actions";
 
 class CalcButton extends React.Component {
   processClick = () => {
-    this.props.addDigit(this.props.value);
+    switch (this.props.value) {
+      case "0":
+      case "1":
+      case "2":
+      case "3":
+      case "4":
+      case "5":
+      case "6":
+      case "7":
+      case "8":
+      case "9":
+        this.props.addDigit(this.props.value);
+        break;
+      case ".":
+        this.props.addDecimal();
+        break;
+      case "AC":
+        this.props.cancel();
+        break;
+    }
   };
 
   render() {
@@ -20,4 +39,4 @@ class CalcButton extends React.Component {
   }
 }
 
-export default connect(null, { addDigit })(CalcButton);
+export default connect(null, { addDigit, addDecimal, cancel })(CalcButton);
