@@ -23,7 +23,7 @@ class App extends React.Component {
               <CalcButton value="4" buttonStyle="default" id="four" />
               <CalcButton value="5" buttonStyle="default" id="five" />
               <CalcButton value="6" buttonStyle="default" id="six" />
-              <CalcButton value="X" buttonStyle="orange" id="multiply" />
+              <CalcButton value="x" buttonStyle="orange" id="multiply" />
 
               <CalcButton value="1" buttonStyle="default" id="one" />
               <CalcButton value="2" buttonStyle="default" id="two" />
