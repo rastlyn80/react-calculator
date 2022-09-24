@@ -51,7 +51,7 @@ h5 {
 }
 
 .calc-display {
-  font-size: 2.5em;
+  font-size: 2em;
   height: 35%;
   width: 85%;
   margin: 20px auto;
@@ -62,6 +62,12 @@ h5 {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.smaller-font {
+  font-size: 0.5em;
+}
+.smallest-font {
+  font-size: 0.3em;
 }
 
 .calc-button {

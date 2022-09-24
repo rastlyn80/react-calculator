@@ -10,13 +10,21 @@ import {
 } from "../actions/types";
 
 const INITIAL_STATE = {
-  currentDigit: 0,
+  currentDigit: "0",
 };
 
 export default (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case ADD_DIGIT:
-      return { ...state, currentDigit: action.payload };
+      if (state.currentDigit.length > 18) return state;
+      if (state.currentDigit === "0" && action.payload === "0") return state;
+      if (state.currentDigit === "0")
+        return { ...state, currentDigit: action.payload };
+
+      return {
+        ...state,
+        currentDigit: state.currentDigit.concat(action.payload),
+      };
 
     default:
       return state;
