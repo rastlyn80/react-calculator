@@ -3,7 +3,10 @@ import React from "react";
 class CalcButton extends React.Component {
   render() {
     return (
-      <div className={`calc-button ${this.props.buttonStyle}`}>
+      <div
+        className={`calc-button ${this.props.buttonStyle}`}
+        id={this.props.id}
+      >
         {this.props.value}
       </div>
     );

@@ -13,22 +13,22 @@ class App extends React.Component {
           <div className="main">
             <CalcDisplay />
             <div className="buttons">
-              <CalcButton value="7" buttonStyle="default" />
-              <CalcButton value="8" buttonStyle="default" />
-              <CalcButton value="9" buttonStyle="default" />
-              <CalcButton value="X" buttonStyle="orange" />
-              <CalcButton value="4" buttonStyle="default" />
-              <CalcButton value="5" buttonStyle="default" />
-              <CalcButton value="6" buttonStyle="default" />
-              <CalcButton value="-" buttonStyle="orange" />
-              <CalcButton value="1" buttonStyle="default" />
-              <CalcButton value="2" buttonStyle="default" />
-              <CalcButton value="3" buttonStyle="default" />
-              <CalcButton value="+" buttonStyle="orange" />
-              <CalcButton value="0" buttonStyle="default" />
-              <CalcButton value="." buttonStyle="default" />
-              <CalcButton value="AC" buttonStyle="grey" />
-              <CalcButton value="=" buttonStyle="grey" />
+              <CalcButton value="7" buttonStyle="default" id="seven" />
+              <CalcButton value="8" buttonStyle="default" id="eight" />
+              <CalcButton value="9" buttonStyle="default" id="nine" />
+              <CalcButton value="X" buttonStyle="orange" id="multiply" />
+              <CalcButton value="4" buttonStyle="default" id="four" />
+              <CalcButton value="5" buttonStyle="default" id="five" />
+              <CalcButton value="6" buttonStyle="default" id="six" />
+              <CalcButton value="-" buttonStyle="orange" id="subtract" />
+              <CalcButton value="1" buttonStyle="default" id="one" />
+              <CalcButton value="2" buttonStyle="default" id="two" />
+              <CalcButton value="3" buttonStyle="default" id="three" />
+              <CalcButton value="+" buttonStyle="orange" id="add" />
+              <CalcButton value="0" buttonStyle="default" id="zero" />
+              <CalcButton value="." buttonStyle="default" id="decimal" />
+              <CalcButton value="AC" buttonStyle="grey" id="clear" />
+              <CalcButton value="=" buttonStyle="grey" id="equals" />
             </div>
             <Credits />
           </div>
