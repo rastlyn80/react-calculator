@@ -1,0 +1,49 @@
+:root {
+  --black: #000000ff;
+  --oxford-blue: #14213dff;
+  --orange-web: #fca311ff;
+  --platinum: #e5e5e5ff;
+  --white: #ffffffff;
+  --middle-blue-green: #8ed8d0;
+}
+
+body {
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  background-color: var(--oxford-blue);
+  color: var(--platinum);
+}
+
+.container {
+  height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  border-radius: 50px;
+  height: 550px;
+  width: 270px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--black);
+  border: 2px solid var(--middle-blue-green);
+}
+
+.calc-display {
+  font-size: 2.5em;
+  height: 35%;
+  width: 85%;
+  margin: 20px auto;
+  position: relative;
+}
+
+#display {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
