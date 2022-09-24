@@ -2,7 +2,11 @@ import React from "react";
 
 class CalcButton extends React.Component {
   render() {
-    return <div>BUTTON</div>;
+    return (
+      <div className={`calc-button ${this.props.buttonStyle}`}>
+        {this.props.value}
+      </div>
+    );
   }
 }
 
