@@ -33,6 +33,7 @@ export default (state = INITIAL_STATE, action) => {
           previousDigit: state.currentDigit,
           currentDigit: action.payload,
           onOperation: false,
+          hasDecimal: false,
         };
       if (state.currentDigit.length > 18) return state;
       if (state.currentDigit === "0" && action.payload === "0") return state;
