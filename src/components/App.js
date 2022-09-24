@@ -12,23 +12,28 @@ class App extends React.Component {
           <h5>inspired by the iPhone Calculator</h5>
           <div className="main">
             <CalcDisplay />
+            <CalcButton value="AC" buttonStyle="cancel" id="clear" />
             <div className="buttons">
               <CalcButton value="7" buttonStyle="default" id="seven" />
+
               <CalcButton value="8" buttonStyle="default" id="eight" />
               <CalcButton value="9" buttonStyle="default" id="nine" />
-              <CalcButton value="X" buttonStyle="orange" id="multiply" />
+              <CalcButton value="÷" buttonStyle="orange" id="divide" />
+
               <CalcButton value="4" buttonStyle="default" id="four" />
               <CalcButton value="5" buttonStyle="default" id="five" />
               <CalcButton value="6" buttonStyle="default" id="six" />
-              <CalcButton value="-" buttonStyle="orange" id="subtract" />
+              <CalcButton value="X" buttonStyle="orange" id="multiply" />
+
               <CalcButton value="1" buttonStyle="default" id="one" />
               <CalcButton value="2" buttonStyle="default" id="two" />
               <CalcButton value="3" buttonStyle="default" id="three" />
-              <CalcButton value="+" buttonStyle="orange" id="add" />
+              <CalcButton value="-" buttonStyle="orange" id="subtract" />
+
               <CalcButton value="0" buttonStyle="default" id="zero" />
               <CalcButton value="." buttonStyle="default" id="decimal" />
-              <CalcButton value="AC" buttonStyle="grey" id="clear" />
               <CalcButton value="=" buttonStyle="grey" id="equals" />
+              <CalcButton value="+" buttonStyle="orange" id="add" />
             </div>
             <Credits />
           </div>
